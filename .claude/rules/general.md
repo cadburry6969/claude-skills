@@ -1,0 +1,24 @@
+- Only add comments when they provide useful context.
+- Keep comments concise and understandable.
+- Do not use em dashes.
+- Do not add decorative section comments such as:
+  -- ---------- JOBS ----------
+- Prefer simple, readable solutions over unnecessarily complex abstractions.
+- Do not introduce dependencies unless they are necessary.
+- Preserve the existing project architecture unless there is a clear reason to change it.
+- Do not rename existing files, exports, events, functions, or configuration keys without a reason.
+- Avoid unnecessary refactoring when implementing a specific feature or fix.
+- Keep functions focused on a single responsibility.
+- Prefer early returns when they improve readability.
+- Avoid deeply nested conditionals.
+- Reuse existing utilities and helpers before creating duplicates.
+- Remove unused variables, imports, functions, and dependencies.
+- Do not leave debugging statements such as print(), console.log(), or debug code in production code.
+- Maintain the existing folder structure and naming conventions.
+  - `[docs]` this is where all the docs go (eg: items.lua, images, etc)
+  - `bridge/**/client.lua` and `bridge/**/server.lua`
+  - `modules/**/client.lua` and `modules/**/server.lua`
+  - `config/*.lua` (eg: config/shared.lua, config/client.lua, config/spawn.lua)
+  - `web/**` & web source should be like `web-source/**`
+  - `fxmanifest.lua`
+  - `README.md`
